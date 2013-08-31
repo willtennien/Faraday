@@ -1,0 +1,15 @@
+cp /usr/local/lib/node_modules/customscore/customscore.coffee assets/coffeescripts
+coffee -wco ./assets/javascripts ./assets/coffeescripts/ &
+PIDS[0]=$!
+sass --watch assets/styles/ &
+PIDS[1]=$!
+coffee precompile.coffee --watch &
+PIDS[2]=$!
+mongod &
+PIDS[3]=$!
+coffee app.coffee &
+PIDS[4]=$!
+
+trap "kill ${PIDS[*]}" SIGINT
+
+wait

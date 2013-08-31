@@ -1,0 +1,22 @@
+{
+  "name": "faraday",
+  "version": "1.2.0",
+  "main": "faraday.coffee",
+  "engines": "node 0.10",
+  "author": {
+    "name": "Will Murphy"
+  },
+  "dependencies": {
+    "mongodb": "1.x.x",
+    "step": "0.x.x"
+  },
+  "description": "A lightweight MVC framework",
+  "readme": "Faraday\n=======\nA lightweight MVC framework.\n\nTo begin, run the following the in the root of your app:\n\n<code><pre>\n    coffee -e \"require('faraday').new()\"\n</pre></code>\n\nNow you can access faraday throught the folders <code>models</code>, <code>views</code>, and <code>controllers</code>.",
+  "readmeFilename": "README.md",
+  "_id": "faraday@1.1.11",
+  "_from": "faraday@1.1.11",
+  "dist": {
+    "shasum": "ddcfa288aacfa53c806fd757e2a412afd6154f61"
+  },
+  "_resolved": "https://registry.npmjs.org/faraday/-/faraday-1.1.11.tgz"
+}
